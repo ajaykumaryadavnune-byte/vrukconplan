@@ -1,4 +1,5 @@
-// Mobile menu
+
+  // Mobile menu
 const toggle = document.querySelector(".menu-toggle");
 const menu = document.getElementById("menu");
 if (toggle && menu) {
@@ -74,24 +75,39 @@ if (form) {
     btn.textContent = "Sending…";
     form.querySelector(".form-status")?.remove();
 
-    try {
-      const body = new URLSearchParams(new FormData(form));
-      if (!body.has("form-name")) body.set("form-name", form.getAttribute("name"));
-      const res = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body.toString(),
-      });
-      if (!res.ok) throw new Error(res.status);
-      window.location.href = "/thank-you";
-    } catch {
-      const status = document.createElement("p");
-      status.className = "form-status error";
-      status.setAttribute("role", "alert");
-      status.textContent = "Sorry, your enquiry could not be sent. Please try again or call us directly.";
-      btn.after(status);
-      btn.disabled = false;
-      btn.textContent = original;
-    }
+    
+try {
+  const formData = new FormData(form);
+
+  const payload = {
+    name: formData.get("name") || "",
+    phone: formData.get("phone") || "",
+    email: formData.get("email") || "",
+    service: formData.get("service") || "",
+    location: formData.get("location") || "",
+    message: formData.get("message") || ""
+  };
+
+  await fetch("https://script.google.com/macros/s/AKfycbwxWZ6Ds0QS7bNAq1GodR03_fPeUGn-waC0uqIMra-C17Pb2R3DJ4A819Gk5YlfKS-sdg/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "text/plain;charset=utf-8"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  window.location.href = "/thank-you";
+
+} catch (error) {
+  const status = document.createElement("p");
+  status.className = "form-status error";
+  status.setAttribute("role", "alert");
+  status.textContent = "Sorry, your enquiry could not be sent. Please try again or call us directly.";
+  btn.after(status);
+  btn.disabled = false;
+  btn.textContent = original;
+}
+
   });
 }
