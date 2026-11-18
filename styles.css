@@ -253,4 +253,19 @@ section { padding: clamp(4rem, 9vw, 7rem) clamp(1.25rem, 4vw, 3rem); max-width: 
   .cards, .steps, .row { grid-template-columns: 1fr; }
   .why-list li { grid-template-columns: 1fr; gap: .5rem; }
   .stamp { right: .5rem; }
+/* Vruksha ConPlan Logo */
+.site-logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+  
+
