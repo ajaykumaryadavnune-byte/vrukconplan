@@ -1,260 +1,61 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vruksha Conplan — Building Permissions, Fire NOC, RERA &amp; DTCP / HMDA Approvals</title>
-  <meta name="description" content="Vruksha Conplan is an architecture and construction consultancy handling building permissions for houses, sheds and industries, Fire NOC, ECBC certification, RERA registration and DTCP / HMDA land development approvals." />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1d33">
+  <title>VRUKSHA CONPLAN | Design, Planning & Construction in Telangana</title>
+  <meta name="description" content="VRUKSHA CONPLAN provides architectural planning, structural engineering, building permission consultancy, estimation and construction services across Telangana.">
+  <meta name="keywords" content="building permissions Telangana, GHMC building permission, HMDA, DTCP, structural design, construction Telangana, architectural design">
+  <meta property="og:title" content="VRUKSHA CONPLAN | Design • Planning • Construction">
+  <meta property="og:description" content="Architecture, engineering, permissions and construction services across Telangana.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0b1d33;--navy2:#122b49;--gold:#c8a45d;--gold2:#e4cb91;--ink:#182536;--muted:#667487;--paper:#f6f7f9;--white:#fff;--line:#e5e9ef;--green:#2c7658;--shadow:0 18px 50px rgba(11,29,51,.10);--radius:20px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.65}h1,h2,h3,h4{font-family:Manrope,sans-serif;line-height:1.15;margin:0 0 16px;letter-spacing:-.03em}h1{font-size:clamp(2.7rem,6vw,5.4rem);font-weight:800}h2{font-size:clamp(2rem,4vw,3.1rem)}h3{font-size:1.22rem}p{margin:0 0 15px;color:var(--muted)}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}.topbar{background:#071526;color:#dbe4ee;font-size:.82rem;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.topbar a{color:var(--gold2)}header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:11px;min-width:220px}.brandmark{width:43px;height:43px;border-radius:13px;background:var(--navy);display:grid;place-items:center;color:var(--gold2);font-family:Manrope;font-weight:800;font-size:1.15rem;border:1px solid rgba(200,164,93,.7)}.brand strong{display:block;font-family:Manrope;font-size:1rem;letter-spacing:.06em;color:var(--navy)}.brand small{display:block;font-size:.65rem;letter-spacing:.16em;color:#9a7a3d;font-weight:700}.navlinks{display:flex;align-items:center;gap:22px;font-size:.88rem;font-weight:700;color:#354458}.navlinks a:hover{color:#a77f35}.nav-actions{display:flex;align-items:center;gap:10px}.lang{border:1px solid var(--line);background:#fff;border-radius:9px;padding:9px 11px;font-weight:700;color:var(--navy);cursor:pointer}.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;color:var(--navy);font-size:1.2rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:10px;padding:13px 19px;font-weight:700;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#101c2b}.btn-dark{background:var(--navy);color:#fff}.btn-outline{border:1px solid rgba(255,255,255,.35);color:#fff;background:transparent}.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,rgba(7,21,38,.98),rgba(13,39,65,.88)),url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=85') center/cover;color:#fff;padding:112px 0 100px}.hero:after{content:"";position:absolute;width:560px;height:560px;border:1px solid rgba(200,164,93,.2);border-radius:50%;right:-150px;top:-170px;box-shadow:0 0 0 65px rgba(200,164,93,.035),0 0 0 130px rgba(200,164,93,.025)}.hero-content{position:relative;z-index:1;max-width:800px}.eyebrow{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:700;color:var(--gold2);margin-bottom:22px}.eyebrow:before{content:"";width:32px;height:1px;background:var(--gold)}.hero h1{color:#fff}.hero h1 span{color:var(--gold2)}.hero p{color:#c8d3df;font-size:1.12rem;max-width:660px;margin:23px 0 30px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:52px;padding-top:25px;border-top:1px solid rgba(255,255,255,.15)}.hero-meta strong{display:block;color:#fff;font:700 1.35rem Manrope}.hero-meta span{color:#b6c4d3;font-size:.83rem}.section{padding:92px 0}.section-soft{background:var(--paper)}.section-head{max-width:720px;margin-bottom:42px}.section-head.center{text-align:center;margin:0 auto 42px}.section-head p{font-size:1.03rem}.kicker{color:#a17b36;text-transform:uppercase;letter-spacing:.17em;font-size:.72rem;font-weight:800;margin-bottom:13px;display:block}.grid{display:grid;gap:20px}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px;transition:.25s;box-shadow:0 5px 18px rgba(11,29,51,.025)}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#d9c69f}.iconbox{width:48px;height:48px;border-radius:14px;background:#f5f0e5;color:#987438;display:grid;place-items:center;font-size:1.35rem;margin-bottom:19px}.card p{font-size:.92rem;margin:0}.card h3{color:var(--navy)}.text-link{display:inline-flex;margin-top:18px;color:#987438;font-weight:800;font-size:.87rem}.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.visual-panel{min-height:430px;border-radius:26px;background:linear-gradient(145deg,rgba(11,29,51,.1),rgba(11,29,51,.65)),url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85') center/cover;position:relative;box-shadow:var(--shadow)}.visual-note{position:absolute;bottom:22px;left:22px;right:22px;background:rgba(255,255,255,.95);border-radius:16px;padding:20px}.visual-note strong{font:800 1.1rem Manrope;color:var(--navy)}.checklist{list-style:none;padding:0;margin:25px 0}.checklist li{padding:9px 0 9px 29px;position:relative;color:#425165}.checklist li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}.stats{background:var(--navy);color:#fff;padding:32px 0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.stat{text-align:center;border-right:1px solid rgba(255,255,255,.14)}.stat:last-child{border:0}.stat strong{font:800 2rem Manrope;color:var(--gold2);display:block}.stat span{font-size:.84rem;color:#c5d0dc}.permission-card{border-left:3px solid var(--gold)}.districts{display:flex;flex-wrap:wrap;gap:9px}.district{border:1px solid var(--line);border-radius:999px;padding:8px 13px;background:#fff;font-size:.84rem;color:#435267}.checker{background:var(--navy);border-radius:26px;padding:38px;color:#fff;box-shadow:var(--shadow)}.checker h2{color:#fff}.checker p{color:#c3ceda}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.field label{display:block;font-size:.82rem;font-weight:700;margin-bottom:7px;color:inherit}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #dce2e9;background:#fff;color:#1b2b3d;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,164,93,.15)}.checker .field label{color:#dbe4ed}.checker .field input,.checker .field select{background:#fff}.result{display:none;margin-top:20px;background:#fff;color:var(--ink);border-radius:14px;padding:20px}.result.show{display:block}.result strong{color:var(--navy)}.note{font-size:.8rem;color:#9eabb9;margin-top:14px}.process{counter-reset:steps}.step{position:relative;padding:5px 0 25px 68px;min-height:85px}.step:before{counter-increment:steps;content:counter(steps,decimal-leading-zero);position:absolute;left:0;top:0;width:48px;height:48px;border-radius:14px;background:#f5f0e5;color:#987438;display:grid;place-items:center;font:800 .9rem Manrope}.step h3{margin-bottom:6px}.step p{font-size:.9rem}.project-placeholder{min-height:210px;border-radius:16px;background:linear-gradient(135deg,#e8edf2,#d8e0e8);display:grid;place-items:center;text-align:center;padding:20px;color:#607084}.project-placeholder span{font-size:2rem;display:block;margin-bottom:8px}.faq details{padding:19px 0;border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font-weight:800;color:var(--navy)}.faq details p{margin:12px 0 0}.contact-panel{background:#f4f6f8;border-radius:24px;padding:35px}.contact-list{display:grid;gap:15px;margin-top:25px}.contact-item{display:flex;gap:13px;align-items:flex-start}.contact-item b{display:block;color:var(--navy)}.contact-item span{font-size:.9rem;color:var(--muted)}.contact-form{background:#fff;border:1px solid var(--line);padding:28px;border-radius:22px;box-shadow:var(--shadow)}.contact-form .field{margin-bottom:14px}.contact-form textarea{min-height:100px;resize:vertical}.cta{background:linear-gradient(110deg,#102b49,#071a2e);padding:65px 0;color:#fff}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{color:#fff;margin-bottom:8px}.cta p{color:#c5d0dc;margin:0}.footer{background:#061423;color:#d7e0e9;padding:58px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:35px}.footer h4{color:#fff;font-size:1rem}.footer p,.footer a{color:#aebdcb;font-size:.88rem}.footer a:hover{color:var(--gold2)}.footer-links{display:grid;gap:9px}.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:.8rem;color:#8798aa}.float-wa{position:fixed;right:22px;bottom:22px;z-index:60;background:#1b9b62;color:#fff;border-radius:999px;padding:14px 18px;font-weight:800;box-shadow:0 12px 28px rgba(0,0,0,.22)}.small{font-size:.8rem}.gold{color:#a17b36}.hidden{display:none!important}
+    @media(max-width:1000px){.navlinks{gap:13px;font-size:.8rem}.grid-4{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.container{width:min(100% - 30px,1160px)}.topbar .container{justify-content:center;text-align:center}.nav{height:70px}.brand{min-width:0}.brand strong{font-size:.88rem}.brand small{font-size:.55rem}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:18px 22px 25px;flex-direction:column;align-items:flex-start;gap:15px}.navlinks.open{display:flex}.nav-actions .btn{display:none}.hero{padding:82px 0 70px}.hero-meta{gap:18px}.section{padding:68px 0}.grid-3{grid-template-columns:1fr}.grid-4{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr;gap:32px}.visual-panel{min-height:300px}.stats-grid{grid-template-columns:repeat(2,1fr);row-gap:25px}.stat:nth-child(2){border:0}.form-grid{grid-template-columns:1fr}.checker{padding:25px 19px}.cta-inner{display:block}.cta-inner .btn{margin-top:22px}.footer-grid{grid-template-columns:1fr 1fr}.float-wa{right:13px;bottom:13px;padding:12px 15px}}
+    @media(max-width:430px){.grid-4{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.hero-buttons .btn{width:100%}.hero-meta{display:grid;grid-template-columns:1fr 1fr}.brandmark{width:38px;height:38px}.lang{padding:8px}}
+  </style>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-
-  <header class="nav" id="top">
-    <a class="brand" href="#top" aria-label="Vruksha Conplan home">
-      <img src="/vruksha-conplan-logo.png"
-     alt="Vruksha ConPlan"
-     style="width:180px;height:auto;display:block;" />
-    </a>
-    <nav aria-label="Main">
-      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-      <ul id="menu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#why">Why us</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a class="btn btn-small" href="#contact">Get a quote</a></li>
-      </ul>
-    </nav>
+  <div class="topbar"><div class="container"><span data-en="Serving residential, commercial & institutional projects across Telangana" data-te="తెలంగాణ అంతటా నివాస, వాణిజ్య మరియు సంస్థాగత ప్రాజెక్టులకు సేవలు">Serving residential, commercial & institutional projects across Telangana</span><span><a href="tel:+917799299297">+91 77992 99297</a> &nbsp; | &nbsp; <a href="mailto:ajaykumaryadavnune@gmail.com">Email us</a></span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Vruksha Conplan home"><span class="brandmark">VC</span><span><strong>VRUKSHA CONPLAN</strong><small>DESIGN • PLANNING • CONSTRUCTION</small></span></a>
+      <nav class="navlinks" id="navlinks">
+        <a href="#about" data-en="About" data-te="మా గురించి">About</a><a href="#services" data-en="Services" data-te="సేవలు">Services</a><a href="#permissions" data-en="Permissions" data-te="అనుమతులు">Permissions</a><a href="#projects" data-en="Projects" data-te="ప్రాజెక్టులు">Projects</a><a href="#checker" data-en="Eligibility Checker" data-te="అర్హత తనిఖీ">Eligibility Checker</a><a href="#contact" data-en="Contact" data-te="సంప్రదించండి">Contact</a>
+      </nav>
+      <div class="nav-actions"><button class="lang" id="langBtn" type="button">తెలుగు</button><a class="btn btn-dark" href="#enquiry" data-en="Request a Quote" data-te="కోట్ పొందండి">Request a Quote</a><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+    </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="tag reveal">Architecture · Construction · Approvals</p>
-        <h1 class="reveal">From drawing board to <span class="hl">approved</span> — without the running around.</h1>
-        <p class="lede reveal">We prepare the drawings, compile the documents and follow up with every department, so your house, shed, factory or layout gets permitted the first time.</p>
-        <div class="hero-actions reveal">
-          <a class="btn" href="#contact">Start your approval</a>
-          <a class="btn btn-ghost" href="#services">See all services</a>
-        </div>
-        <ul class="authorities reveal" aria-label="Authorities we work with">
-          <li>DTCP</li><li>HMDA</li><li>GHMC</li><li>Municipalities</li><li>Gram Panchayat</li><li>Fire Services</li><li>RERA</li><li>ECBC</li>
-        </ul>
-      </div>
-
-      <div class="sheet reveal" aria-hidden="true">
-        <div class="sheet-head">
-          <span>SHEET A-01</span><span>SITE PLAN</span><span>SCALE 1:200</span>
-        </div>
-        <svg class="plan" viewBox="0 0 400 320">
-          <defs>
-            <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-              <line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1" opacity=".35"/>
-            </pattern>
-          </defs>
-          <rect class="draw" x="20" y="20" width="360" height="280" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 6"/>
-          <rect class="draw d2" x="70" y="60" width="200" height="170" fill="url(#hatch)" stroke="currentColor" stroke-width="3"/>
-          <line class="draw d3" x1="170" y1="60" x2="170" y2="230" stroke="currentColor" stroke-width="2"/>
-          <line class="draw d3" x1="70" y1="140" x2="170" y2="140" stroke="currentColor" stroke-width="2"/>
-          <path class="draw d4" d="M170 175 A 30 30 0 0 1 200 145" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <rect class="draw d4" x="290" y="60" width="70" height="110" fill="none" stroke="currentColor" stroke-width="2"/>
-          <line class="draw d5" x1="70" y1="255" x2="270" y2="255" stroke="currentColor" stroke-width="1"/>
-          <line x1="70" y1="248" x2="70" y2="262" stroke="currentColor"/>
-          <line x1="270" y1="248" x2="270" y2="262" stroke="currentColor"/>
-          <text x="150" y="275" font-size="11" fill="currentColor" font-family="JetBrains Mono, monospace">12.00 m</text>
-          <text x="295" y="120" font-size="10" fill="currentColor" font-family="JetBrains Mono, monospace">SHED</text>
-          <text x="95" y="105" font-size="10" fill="currentColor" font-family="JetBrains Mono, monospace">LIVING</text>
-          <text x="185" y="105" font-size="10" fill="currentColor" font-family="JetBrains Mono, monospace">BED</text>
-          <g transform="translate(340 260)"><circle r="16" fill="none" stroke="currentColor"/><path d="M0 -14 L5 4 L0 0 L-5 4 Z" fill="currentColor"/><text x="-4" y="-20" font-size="10" fill="currentColor" font-family="JetBrains Mono, monospace">N</text></g>
-        </svg>
-        <div class="stamp"><span>APPROVED</span><small>Permit issued</small></div>
-      </div>
+    <section class="hero" id="home">
+      <div class="container"><div class="hero-content">
+        <span class="eyebrow" data-en="Engineering • Architecture • Construction" data-te="ఇంజినీరింగ్ • ఆర్కిటెక్చర్ • నిర్మాణం">Engineering • Architecture • Construction</span>
+        <h1 data-en-html="Build with clarity.<br><span>Build with confidence.</span>" data-te-html="స్పష్టమైన ప్రణాళికతో నిర్మించండి.<br><span>నమ్మకంతో ముందుకు సాగండి.</span>">Build with clarity.<br><span>Build with confidence.</span></h1>
+        <p data-en="From architectural planning and structural engineering to building permission consultancy and construction management, VRUKSHA CONPLAN supports your project from concept to completion across Telangana." data-te="ఆర్కిటెక్చరల్ ప్లానింగ్, స్ట్రక్చరల్ ఇంజినీరింగ్, భవన అనుమతుల కన్సల్టెన్సీ మరియు నిర్మాణ నిర్వహణ వరకు — తెలంగాణ అంతటా మీ ప్రాజెక్ట్‌కు ప్రారంభం నుండి పూర్తయ్యే వరకు సహకారం అందిస్తాము.">From architectural planning and structural engineering to building permission consultancy and construction management, VRUKSHA CONPLAN supports your project from concept to completion across Telangana.</p>
+        <div class="hero-buttons"><a class="btn btn-gold" href="#enquiry" data-en="Discuss Your Project →" data-te="మీ ప్రాజెక్ట్ గురించి మాట్లాడండి →">Discuss Your Project →</a><a class="btn btn-outline" href="#services" data-en="Explore Services" data-te="సేవలను చూడండి">Explore Services</a></div>
+        <div class="hero-meta"><div><strong>2025</strong><span data-en="Established" data-te="స్థాపించబడింది">Established</span></div><div><strong>33</strong><span data-en="Telangana districts covered" data-te="తెలంగాణ జిల్లాలు">Telangana districts covered</span></div><div><strong>360°</strong><span data-en="Project support" data-te="ప్రాజెక్ట్ సహకారం">Project support</span></div></div>
+      </div></div>
     </section>
 
-    <!-- STATS -->
-    <section class="ticker" aria-label="Highlights">
-      <div><strong>6+</strong><span>approval categories handled end to end</span></div>
-      <div><strong>1</strong><span>point of contact for every department</span></div>
-      <div><strong>100%</strong><span>drawings prepared in house</span></div>
-      <div><strong>0</strong><span>visits to government offices for you</span></div>
-    </section>
+    <section class="stats"><div class="container stats-grid"><div class="stat"><strong>01</strong><span data-en="Architecture & planning" data-te="ఆర్కిటెక్చర్ & ప్లానింగ్">Architecture & planning</span></div><div class="stat"><strong>02</strong><span data-en="Structural engineering" data-te="స్ట్రక్చరల్ ఇంజినీరింగ్">Structural engineering</span></div><div class="stat"><strong>03</strong><span data-en="Permissions consultancy" data-te="అనుమతుల కన్సల్టెన్సీ">Permissions consultancy</span></div><div class="stat"><strong>04</strong><span data-en="Construction management" data-te="నిర్మాణ నిర్వహణ">Construction management</span></div></div></section>
 
-    <!-- SERVICES -->
-    <section class="services" id="services">
-      <div class="section-head">
-        <p class="tag">What we do</p>
-        <h2>Every permission your project needs, under one roof.</h2>
+    <section class="section" id="about"><div class="container split">
+      <div><span class="kicker" data-en="About Vruksha Conplan" data-te="వృక్ష కన్ప్లాన్ గురించి">About Vruksha Conplan</span><h2 data-en-html="Thoughtful planning.<br>Responsible execution." data-te-html="ఆలోచనాత్మక ప్రణాళిక.<br>బాధ్యతాయుతమైన అమలు.">Thoughtful planning.<br>Responsible execution.</h2>
+        <p data-en="VRUKSHA CONPLAN is an architectural, civil engineering, permissions and construction consultancy serving clients across Telangana. Our multidisciplinary team brings planning, design, estimation and project execution services together under one coordinated approach." data-te="VRUKSHA CONPLAN తెలంగాణ అంతటా ఆర్కిటెక్చర్, సివిల్ ఇంజినీరింగ్, అనుమతులు మరియు నిర్మాణ కన్సల్టెన్సీ సేవలను అందిస్తుంది. మా బృందం ప్రణాళిక, డిజైన్, అంచనాలు మరియు ప్రాజెక్ట్ అమలు సేవలను సమన్వయంతో అందిస్తుంది.">VRUKSHA CONPLAN is an architectural, civil engineering, permissions and construction consultancy serving clients across Telangana. Our multidisciplinary team brings planning, design, estimation and project execution services together under one coordinated approach.</p>
+        <ul class="checklist"><li data-en="Architectural and structural design coordination" data-te="ఆర్కిటెక్చరల్ మరియు స్ట్రక్చరల్ డిజైన్ సమన్వయం">Architectural and structural design coordination</li><li data-en="Building permission documentation and application support" data-te="భవన అనుమతి పత్రాలు మరియు దరఖాస్తు సహాయం">Building permission documentation and application support</li><li data-en="BOQ, estimation and project cost planning" data-te="BOQ, అంచనాలు మరియు ప్రాజెక్ట్ ఖర్చుల ప్రణాళిక">BOQ, estimation and project cost planning</li><li data-en="Construction supervision and project management" data-te="నిర్మాణ పర్యవేక్షణ మరియు ప్రాజెక్ట్ నిర్వహణ">Construction supervision and project management</li></ul>
+        <a class="btn btn-dark" href="#contact" data-en="Talk to Our Team" data-te="మా బృందాన్ని సంప్రదించండి">Talk to Our Team</a>
       </div>
+      <div class="visual-panel"><div class="visual-note"><strong data-en="One coordinated team for your project" data-te="మీ ప్రాజెక్ట్ కోసం సమన్వయ బృందం">One coordinated team for your project</strong><p class="small" data-en="Design • Engineering • Permissions • Construction" data-te="డిజైన్ • ఇంజినీరింగ్ • అనుమతులు • నిర్మాణం">Design • Engineering • Permissions • Construction</p></div></div>
+    </div></section>
 
-      <div class="cards">
-        <article class="card reveal">
-          <span class="num">01</span>
-          <h3>Building permissions</h3>
-          <p>Approval for independent houses, villas, apartments and commercial buildings. Plans drawn to local bye-laws, setbacks and FSI.</p>
-          <ul><li>Residential houses &amp; G+ buildings</li><li>Commercial complexes</li><li>Regularisation support</li></ul>
-        </article>
-        <article class="card reveal">
-          <span class="num">02</span>
-          <h3>Sheds &amp; industrial approvals</h3>
-          <p>Permissions for industrial sheds, warehouses, godowns, workshops and factories, covering everything from site plan to occupancy.</p>
-          <ul><li>Industrial &amp; warehouse sheds</li><li>Factory building plans</li><li>Occupancy certificates</li></ul>
-        </article>
-        <article class="card card-accent reveal">
-          <span class="num">03</span>
-          <h3>Fire NOC services</h3>
-          <p>Provisional and final Fire NOC for high-rise, commercial, institutional and industrial buildings. Includes fire-safety drawings and inspection support.</p>
-          <ul><li>Provisional Fire NOC</li><li>Final / renewal NOC</li><li>Fire-fighting layout drawings</li></ul>
-        </article>
-        <article class="card reveal">
-          <span class="num">04</span>
-          <h3>ECBC certificate assistance</h3>
-          <p>Energy Conservation Building Code compliance for commercial buildings: envelope, lighting and HVAC documentation, ready for submission.</p>
-          <ul><li>Compliance assessment</li><li>Documentation &amp; reports</li><li>Certificate follow-up</li></ul>
-        </article>
-        <article class="card reveal">
-          <span class="num">05</span>
-          <h3>RERA assistance</h3>
-          <p>Project registration for developers and agents, plus quarterly updates, document preparation and compliance filings.</p>
-          <ul><li>Project &amp; agent registration</li><li>Quarterly progress filings</li><li>Extension &amp; modification</li></ul>
-        </article>
-        <article class="card reveal">
-          <span class="num">06</span>
-          <h3>Land development permission</h3>
-          <p>Layout and land development approvals from DTCP, HMDA and local authorities, including land-use conversion and plotting layouts.</p>
-          <ul><li>DTCP / HMDA layout approval</li><li>Land-use conversion</li><li>Plotted &amp; venture layouts</li></ul>
-        </article>
-      </div>
-
-      <div class="also reveal">
-        <p><strong>Also:</strong> architectural design, structural drawings, 3D elevations, estimation and turnkey construction.</p>
-        <a href="#contact" class="link-arrow">Discuss your project →</a>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="process" id="process">
-      <div class="section-head light">
-        <p class="tag">How it works</p>
-        <h2>Four steps. You only take part in the first.</h2>
-      </div>
-      <ol class="steps">
-        <li class="reveal"><span>01</span><h3>Consult &amp; site study</h3><p>We review your land documents and site, and the applicable rules, then tell you clearly what is possible.</p></li>
-        <li class="reveal"><span>02</span><h3>Drawings &amp; documents</h3><p>Architectural, structural and fire drawings prepared to code, and every affidavit and form compiled.</p></li>
-        <li class="reveal"><span>03</span><h3>Submission &amp; liaison</h3><p>Online and offline filing, scrutiny responses, site inspections, all followed up by our team.</p></li>
-        <li class="reveal"><span>04</span><h3>Approval delivered</h3><p>Sanctioned plans, NOCs and certificates handed over, ready for you to start construction.</p></li>
-      </ol>
-    </section>
-
-    <!-- WHY -->
-    <section class="why" id="why">
-      <div class="why-quote reveal">
-        <p>“A good approval starts with a good drawing. We design with the rulebook open, so plans pass scrutiny instead of coming back for corrections.”</p>
-        <span>— Vruksha Conplan</span>
-      </div>
-      <ul class="why-list">
-        <li class="reveal"><h3>Architects, not just agents</h3><p>The same team designs your building and gets it approved, so nothing is lost between drawing and file.</p></li>
-        <li class="reveal"><h3>Transparent timelines</h3><p>You get a clear checklist and fee breakdown up front, with status updates at every stage.</p></li>
-        <li class="reveal"><h3>All project sizes</h3><p>From a single house or shed to industrial units and large layouts.</p></li>
-        <li class="reveal"><h3>Compliance built in</h3><p>Fire, ECBC and RERA requirements are planned from day one, not patched in later.</p></li>
-      </ul>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-      <div class="section-head">
-        <p class="tag">Questions</p>
-        <h2>Good to know.</h2>
-      </div>
-      <div class="faq-list">
-        <details class="reveal"><summary>What documents do I need to start?</summary><p>Usually the sale deed or title document, link documents, encumbrance certificate, tax receipts and a site survey. We share an exact checklist for your project after the first consultation.</p></details>
-        <details class="reveal"><summary>Which buildings need a Fire NOC?</summary><p>Generally high-rise buildings and larger commercial, institutional, assembly and industrial buildings, depending on height and built-up area. We check what applies to your building and handle both the provisional and final NOC.</p></details>
-        <details class="reveal"><summary>What is the difference between DTCP and HMDA approval?</summary><p>HMDA covers the Hyderabad Metropolitan Development Area, while DTCP covers layouts and developments in other areas of the state. We work out which authority has jurisdiction over your land and apply there.</p></details>
-        <details class="reveal"><summary>Do I need RERA registration?</summary><p>Most real estate projects above the prescribed plot area or number of units must be registered before marketing or sale, and so must real estate agents. We handle registration and the ongoing filings.</p></details>
-        <details class="reveal"><summary>How long does an approval take?</summary><p>It depends on the authority and type of permission. A typical house permission is quicker, while layouts and Fire NOCs take longer. You get a realistic timeline before we begin.</p></details>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <div class="contact-info">
-        <p class="tag">Enquire</p>
-        <h2>Tell us about your project.</h2>
-        <p>Share a few details and we will get back to you with the permissions needed, the documents required and a fee estimate.</p>
-        <dl>
-          <div><dt>Phone</dt><dd><a href="tel:+917799299297">+91 77992 99297</a></dd></div>
-          <div><dt>Email</dt><dd><a href="mailto: vrukshaconplan@gmail.com">vrukshaconplan@gmail.com</a></dd></div>
-          <div><dt>Hours</dt><dd>Mon – Sat, 10:00 – 19:00</dd></div>
-        </dl>
-      </div>
-
-      <form class="enquiry" name="enquiry" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" novalidate>
-        <input type="hidden" name="subject" value="New enquiry from %{siteName}" />
-        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-
-        <div class="field">
-          <label for="name">Full name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required />
-          <span class="err" aria-live="polite"></span>
-        </div>
-        <div class="row">
-          <div class="field">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s]{10,15}" required />
-            <span class="err" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <label for="email">Email <small>(optional)</small></label>
-            <input id="email" name="email" type="email" autocomplete="email" />
-            <span class="err" aria-live="polite"></span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="field">
-            <label for="service">Service needed</label>
-            <select id="service" name="service" required>
-              <option value="">Select a service</option>
-              <option>Building permission (house / apartment / commercial)</option>
-              <option>Shed / industrial building permission</option>
-              <option>Fire NOC</option>
-              <option>ECBC certificate assistance</option>
-              <option>RERA assistance</option>
-              <option>Land development permission (DTCP / HMDA)</option>
-              <option>Architectural design / construction</option>
-              <option>Not sure, need guidance</option>
-            </select>
-            <span class="err" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <label for="location">Site location</label>
-            <input id="location" name="location" type="text" placeholder="Area / village, district" />
-          </div>
-        </div>
-        <div class="field">
-          <label for="message">Project details</label>
-          <textarea id="message" name="message" rows="4" placeholder="Plot size, type of building, number of floors, current status…"></textarea>
-        </div>
-        <button class="btn btn-block" type="submit">Send enquiry</button>
-        <p class="form-note">We reply within one working day. Your details are used only to respond to this enquiry.</p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="brand">
-      <img src="/vruksha-conplan-logo.png"
-     alt="Vruksha ConPlan"
-     class="footer-logo" />
-    </div>
-    <p>Architecture, construction &amp; statutory approvals.</p>
-    <p class="small">© <span id="year">2026</span> Vruksha Conplan. All rights reserved.</p>
-  </footer>
-
-  <script src="/main.js" defer></script>
-</body>
-</html>
+    <section class="section section-soft" id="services"><div class="container"><div class="section-head center"><span class="kicker" data-en="What We Do" data-te="మా సేవలు">What We Do</span><h2 data-en="Integrated services for every stage" data-te="ప్రతి దశకు సమగ్ర సేవలు">Integrated services for every stage</h2><p data-en="Choose a specialist service or discuss an end-to-end project requirement with our team." data-te="ప్రత్యేక సేవను ఎంచుకోండి లేదా పూర్తి ప్రాజెక్ట్ అవసరాల గురించి మా బృందంతో మాట్లాడండి.">Choose a specialist service or discuss an end-to-end project requirement with our team.</p></div>
+      <div class="grid grid-3">
+        <article class="card"><div class="iconbox">⌂</div><h3 data-en="Architectural Design" data-te="ఆర్కిటెక్చరల్ డిజైన్">Architectural Design</h3><p data-en="2D floor plans, working drawings, elevations, 3D visualization and space planning for residential and commercial buildings." data-te="నివాస మరియు వాణిజ్య భవనాల కోసం 2D ప్లాన్లు, వర్కింగ్ డ్రాయింగ్స్, ఎలివేషన్స్, 3D విజువలైజేషన్ మరియు స్థల ప్రణాళిక.">2D floor plans, working drawings, elevations, 3D visualization and space planning for residential and commercial buildings.</p><a class="text-link" href="#enquiry" data-en="Enquire about design →" data-te="డిజైన్ గురించి అడగండి →">Enquire about design →</a></article>
+        <article class="card"><div class="iconbox">▦</div><h3 data-en="Structural Engineering" data-te="స్ట్రక్చరల్ ఇంజినీరింగ్">Structural Engineering</h3><p data-en="RCC, steel and foundation design, structural analysis, STAAD.Pro modelling and technical reports." data-te="RCC, స్టీల్ మరియు ఫౌండేషన్ డిజైన్, స్ట్రక్చరల్ విశ్లేషణ, STAAD.Pro మోడలింగ్ మరియు సాంకేతిక నివేదికలు.">RCC, steel and foundation d
